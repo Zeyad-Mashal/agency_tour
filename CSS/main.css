@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1rem;
+  position: absolute;
+  top: 0;
+}
+header img {
+  width: 64px;
+}
+.header_links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+.search {
+  position: relative;
+}
+.search input {
+  width: 250px;
+  border: 3px solid rgb(44, 44, 220);
+  border-radius: 16px;
+  outline: none;
+  padding: 5px 20px;
+}
+.search i {
+  position: absolute;
+  bottom: 7px;
+  right: 20px;
+}
+/* hero */
+.hero {
+  background-image: url("../images/hero_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding-top: 12rem;
+}
+.hero .hero_title {
+  font-size: 3rem;
+  width: 800px;
+  color: rgb(44, 44, 220);
+  margin-left: 1rem;
+}
+/* tours */
+.tours {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tours_title,
+.deals_title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(44, 44, 220);
+  margin: 1rem 0;
+}
+.tours_container,
+.deals_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.tours_container {
+  background-image: url("../images/hero_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+}
+.tours_item {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 1px;
+  overflow: hidden;
+}
+.tours_item img {
+  width: 100%;
+}
+.tours_item h1 {
+  font-size: 30px;
+}
+.tours_item p {
+  padding: 0 1rem 1rem 1rem;
+  color: #999;
+}
+/* deals */
+.deals {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.deals_container {
+  height: 100%;
+  width: 100%;
+}
+.carousel,
+.slide,
+.carousel-inner {
+  width: 85%;
+  border-radius: 16px;
+}
+.carousel-item {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+}
+.item_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 1px;
+  background-color: #fff;
+  border: 2px solid #aaa;
+}
+.item_content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(44, 44, 220);
+}
+.item_content p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.item_content button {
+  padding: 10px;
+  width: 150px;
+  border-radius: 16px;
+  border: 2px solid rgb(9, 9, 83);
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.carousel-item .padge_deals {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 9999;
+  background-color: rgb(9, 9, 83);
+  color: #fff;
+}
+.carousel-item .padge_deals h2 {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+/* discover */
+.discover {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.discover_container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 1px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.discover_container img {
+  width: 600px;
+}
+.discover_content {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.discover_content h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.discover_content p {
+  text-align: center;
+}
+.discover_content button {
+  padding: 10px;
+  border: 2px solid rgb(44, 44, 220);
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+.discover_content button:hover {
+  background-color: rgb(44, 44, 220);
+  color: #fff;
+  border-radius: 16px;
+}
+/* join us */
+.join_us {
+  background-image: url("../images/join_bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+.join_us h1 {
+  font-size: 3rem;
+  color: rgb(44, 44, 220);
+  font-weight: bold;
+  margin: 1rem;
+}
+.join_us input {
+  padding: 10px;
+  width: 50%;
+  border: 2px solid rgb(44, 44, 220);
+  border-radius: 16px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.join_us button {
+  padding: 10px;
+  width: 150px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid rgb(44, 44, 220);
+  margin-bottom: 1rem;
+}
+/* footer */
+footer {
+  width: 100%;
+  background-color: rgb(9, 9, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  width: 600px;
+  height: 500px;
+}
+.footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.footer_conent_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.footer_conent_top i {
+  background-color: goldenrod;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 25px;
+  margin: 0 2rem;
+}
+.footer_conent_top h1 {
+  font-size: 1.5rem;
+}
+.footer_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_input p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_input_data input {
+  width: 600px;
+  border: 2px solid goldenrod;
+  border-radius: 16px;
+  padding: 10px;
+}
+.footer_input_data button {
+  background-color: goldenrod;
+  color: #fff;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 16px;
+}
+.icons {
+  margin-top: 2rem;
+  text-align: center;
+}
+.icons h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+.icons i {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 1rem;
+}
+.copyright {
+  margin-top: 2rem;
+  color: #fff;
+}
