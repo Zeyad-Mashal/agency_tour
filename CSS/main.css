@@ -354,12 +354,14 @@ header img {
 @media screen and (max-width: 789px) {
   .discover_container {
     flex-direction: column;
+    width: 100%;
   }
   .discover_content button {
     margin-bottom: 1rem;
   }
   .discover_content h1 {
     font-size: 3rem;
+    margin-top: 10px;
   }
   .discover_container img {
     width: 100%;
