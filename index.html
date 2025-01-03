@@ -13,27 +13,35 @@
 
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="logo">
-        <img src="./images/logo.png" alt="" />
+        <img src="./images/logo.png" alt="Logo" />
       </div>
-      <div class="header_links">
-        <ul>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-        </ul>
+      <div class="bars" onclick="toggleMenu()">
+        &#9776; <!-- Bars icon -->
       </div>
-      <div class="search">
-        <input type="text" />
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="menu">
+        <div class="header_links">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
     </header>
+    
     <!-- hero -->
     <section class="hero">
       <h1 class="hero_title">
         Your Passport To Explore the World From Anywhere
+        <button>Explore Our Tours</button>
       </h1>
     </section>
     <!-- tours -->
@@ -41,30 +49,28 @@
       <h2 class="tours_title">Most Popular Tours</h2>
       <div class="tours_container">
         <div class="tours_item">
-          <img src="./images/hero_bg.jpeg" alt="" />
-          <h1>New York</h1>
+          <img src="./images/italy.jpeg" alt="" />
+          <h1>Italy: A Timeless Escape
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            mollitia magnam. Fugiat error accusamus facilis excepturi soluta
-            quisquam reprehenderit in.
+            
+Italy offers a perfect blend of history, culture, and beauty. Explore ancient ruins, stunning coastlines, and iconic cities like Rome, Venice, and Florence.
           </p>
         </div>
         <div class="tours_item">
-          <img src="./images/hero_bg.jpeg" alt="" />
-          <h1>New York</h1>
+          <img src="./images/argentina.jpeg" alt="" />
+          <h1>Argentina: A Land of Wonders
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            mollitia magnam. Fugiat error accusamus facilis excepturi soluta
-            quisquam reprehenderit in.
+            Experience the diverse beauty of Argentina, from the bustling streets of Buenos Aires to the stunning glaciers of Patagonia. Discover the Iguazu Falls, the Andes Mountains, and the vibrant culture of tango and delicious cuisine. 
           </p>
         </div>
         <div class="tours_item">
-          <img src="./images/hero_bg.jpeg" alt="" />
-          <h1>New York</h1>
+          <img src="./images/spain.jpeg" alt="" />
+          <h1>Spain: A Vibrant Journey 
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            mollitia magnam. Fugiat error accusamus facilis excepturi soluta
-            quisquam reprehenderit in.
+            Spain enchants with its rich history, stunning architecture, and lively culture. From Barcelona’s Gaudí masterpieces to Madrid’s art museums and Andalusia’s flamenco flair, every region offers something unique.
           </p>
         </div>
       </div>
@@ -221,6 +227,8 @@
       </section>
       <!-- footer -->
        <footer>
+        <img src="./images/logo.png" alt="">
+
         <div class="footer_content">
           <div class="footer_conent_top">
             <i class="fa-solid fa-plane"></i>
@@ -245,7 +253,6 @@
             <p>&copy; 2025 All rights reserved || Created By Pansieh Moussa</p>
           </div>
         </div>
-        <img src="./images/footer_img.jpeg" alt="">
 
        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

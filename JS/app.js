@@ -1,12 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('open');
+}
