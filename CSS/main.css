@@ -691,3 +691,67 @@ footer img {
     width: 100%;
   }
 }
+/* details page end */
+
+/* booking page  */
+.res,
+.res_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.res_container {
+  flex-direction: row;
+}
+.res h2 {
+  margin-top: 6rem;
+  text-align: center;
+}
+.res_form {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid rgb(44, 44, 220);
+  border-radius: 16px;
+  box-shadow: 0px 0px 1px 0px;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.form_top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.form_top input,
+.form_top select {
+  width: 400px;
+  padding: 10px;
+  border: 2px solid rgb(9, 9, 83);
+  outline: none;
+  border-radius: 16px;
+}
+.captcha {
+  width: 100%;
+}
+.captcha img {
+  width: 120px;
+}
+.submit_btn button {
+  width: 100px;
+  border-radius: 16px;
+  padding: 10px;
+  border: 2px solid rgb(9, 9, 83);
+  background-color: rgb(9, 9, 83);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
