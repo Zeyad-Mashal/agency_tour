@@ -10,9 +10,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 1rem;
-  position: absolute;
-  top: 0;
   z-index: 1000;
+  background-color: #eee;
 }
 
 header img {
@@ -27,7 +26,7 @@ header img {
   list-style: none;
   margin: 0 4rem 0 0;
   padding: 0;
-  color: rgb(9, 9, 83);
+  color: #000;
   cursor: pointer;
 }
 
@@ -127,8 +126,7 @@ header img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 650px;
-  padding-top: 12rem;
+  height: 700px;
 }
 .hero .hero_title {
   font-size: 2.5rem;
@@ -143,6 +141,8 @@ header img {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
 }
 .hero_title button {
   font-size: 18px;
