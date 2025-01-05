@@ -7,8 +7,8 @@
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /*x-axis*/
+  align-items: center; /*y-axis*/
   padding: 10px 1rem;
   z-index: 1000;
   background-color: #eee;
@@ -385,6 +385,7 @@ header img {
   align-items: center;
   flex-direction: column;
   height: 400px;
+  position: relative;
 }
 .join_us h1 {
   font-size: 3rem;
@@ -408,6 +409,28 @@ header img {
   font-size: 18px;
   border: 2px solid rgb(44, 44, 220);
   margin-bottom: 1rem;
+}
+.join_us_popup {
+  position: absolute;
+  top: 0px;
+  background-color: #eee;
+  display: none;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  padding: 1rem;
+  position: relative;
+}
+.join_us_popup i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
 }
 @media screen and (max-width: 789px) {
   .join_us input {
